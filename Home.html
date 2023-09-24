@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="./css/Home.css">
+</head>
+<body></body>
+    <header>
+     <div class="poster" >
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="gallery-link">Category</a></li>
+                    <li><a href="#" id="about-link">About</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                    <li class="nav-item"><a href="./pages/favorites.html" class="nav-link" id="categoryLink">Favourites</a></li>
+            </ul>
+        </nav><h1>Welcome to Artify</h1></div> 
+    </header>
+    <main>
+        <div class="painting-details">
+            <img src="https://source.unsplash.com/featured/?Classic%20Art" alt="Painting 1">
+            <div class="info">
+            <h2>After that moment</h2>
+            <p>Artist: John Doe</p>
+            <p>Year: 2023</p>
+            <p>Medium: Oil on Canvas</p>
+            <p>
+                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
+                
+            </p>
+        </div>
+        <div class="painting-details-two">
+            <img src="https://source.unsplash.com/featured/?Modern%20Art" alt="Painting 1">
+            <div class="info-two">
+            <h2>After that moment</h2>
+            <p>Artist: John Doe</p>
+            <p>Year: 2023</p>
+            <p>Medium: Oil on Canvas</p>
+            <p>
+                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
+                
+            </p>
+        </div>
+        </div>
+        <div class="painting-details">
+            <img src="https://source.unsplash.com/featured/?Impressionist%20Art" alt="Painting 1">
+            <div class="info">
+            <h2>After that moment</h2>
+            <p>Artist: John Doe</p>
+            <p>Year: 2023</p>
+            <p>Medium: Oil on Canvas</p>
+            <p>
+                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
+                
+            </p>
+        </div>
+        </div>
+        
+       
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://source.unsplash.com/featured/?logo" alt="Artify Logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Artify. All Rights Reserved.</p>
+                <p>Contact: info@artify.com</p>
+                <p>Follow Us:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://source.unsplash.com/featured/?facebook" alt="Facebook"></a>
+                    <a href="#"><img src="https://source.unsplash.com/featured/?twitter" alt="Twitter"></a>
+                    <a href="#"><img src="https://source.unsplash.com/featured/?instagram" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+        <script>
+            // Event listeners for navigation links
+            const homeLink = document.getElementById('home-link');
+            const galleryLink = document.getElementById('gallery-link');
+            const aboutLink = document.getElementById('about-link');
+            const contactLink = document.getElementById('contact-link');
+    
+            homeLink.addEventListener('click', () => {
+                window.location.href = 'Home.html';
+            });
+    
+            galleryLink.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+    
+            aboutLink.addEventListener('click', () => {
+                window.location.href = 'about.html';
+            });
+    
+            contactLink.addEventListener('click', () => {
+                window.location.href = 'contact.html';
+            });
+        </script>
+    </body>
+</html>

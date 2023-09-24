@@ -1,0 +1,89 @@
+/* Apply styles to the main content container */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the image container to display images in rows */
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style each image card within the container */
+.image-card {
+    position: relative;
+    width: calc(28.33% - 10px);
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    overflow: hidden; /* Ensure the like button doesn't overflow */
+    background: #fff; /* Ensure the card background is white */
+    padding: 5px; /* Add 5px padding to each card */
+    box-sizing: border-box; /* Include padding in card's width calculation */
+}
+
+/* Style the image inside each card */
+.image-card img {
+    width: 100%; /* Make the image take up the full width of the card */
+    height: 100%;
+    display: block;
+}
+
+/* Style the like button */
+.like-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1; /* Ensure it's above the image */
+}
+
+/* Add hover effect on images */
+.image-card:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tit {
+    position: relative;
+    left: 40%;
+}
+
+/* Style the <ul> element */
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the <li> elements within the <ul> */
+ul li {
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+/* Style the <a> (anchor) elements within the <li> elements */
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #f00;
+}
+
+.like-button.liked {
+    color: rgb(55, 8, 120);
+}

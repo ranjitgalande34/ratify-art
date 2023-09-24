@@ -1,0 +1,44 @@
+/* popup.css */
+
+/* Popup container styles */
+.popup {
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    color: white;
+    background-color:rgb(126, 129, 127); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the popup is above other content */
+}
+
+/* Popup content styles */
+.popup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+/* Style for the close button hover effect */
+.close-button:hover {
+    color: red; /* Change the color on hover */
+}
+.close-button{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10%;
+    position: relative;
+    left: 200px;
+
+}
+
+/* You can customize the styles further based on your design preferences */

@@ -1,0 +1,93 @@
+/* favorites.css */
+
+/* Center the title */
+h1 {
+    text-align: center;
+}
+
+/* Style the container for liked images */
+#favoritesContainer {
+    max-width: 1000px; /* Adjust the max width as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style each liked image card */
+.image-card {
+    width: calc(28.33% - 10px); /* 3 images in a row with spacing */
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* Style the liked image */
+.image-card img {
+    width: 100%; /* Set the width to 400px */
+    height: 100%; /* Set the height to 400px */
+    border-radius: 5px;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+/* Style the timestamp */
+.image-card .timestamp {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+/* favorites.css */
+
+/* Style the navigation bar */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    position:relative;
+    left: 43%;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #f00;
+}
+
+/* Style the page title */
+.page-title {
+    text-align: center;
+    font-size: 24px; /* Customize the font size */
+    margin-top: 20px; /* Add space between the navigation bar and title */
+}
+
+/* Style the container for liked images */
+#favoritesContainer {
+    max-width: 1200px; /* Adjust the max width as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style each liked image card */
+/* ... (rest of your existing styles for image cards) */
