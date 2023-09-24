@@ -1,107 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery</title>
-    <link rel="stylesheet" href="./Home.css">
-</head>
-<body></body>
-    <header>
-     <div class="poster" >
-        <nav>
-            <ul>
-                <li><a href="#" id="home-link">Home</a></li>
-                    <li><a href="#" id="gallery-link">Category</a></li>
-                    <li><a href="#" id="about-link">About</a></li>
-                    <li><a href="#" id="contact-link">Contact</a></li>
-                    <li class="nav-item"><a href="./favorites.html" class="nav-link" id="categoryLink">Favourites</a></li>
-            </ul>
-        </nav><h1>Welcome to Artify</h1></div> 
-    </header>
-    <main>
-        <div class="painting-details">
-            <img src="https://source.unsplash.com/featured/?Classic%20Art" alt="Painting 1">
-            <div class="info">
-            <h2>After that moment</h2>
-            <p>Artist: John Doe</p>
-            <p>Year: 2023</p>
-            <p>Medium: Oil on Canvas</p>
-            <p>
-                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
-                
-            </p>
-        </div>
-        <div class="painting-details-two">
-            <img src="https://source.unsplash.com/featured/?Modern%20Art" alt="Painting 1">
-            <div class="info-two">
-            <h2>After that moment</h2>
-            <p>Artist: John Doe</p>
-            <p>Year: 2023</p>
-            <p>Medium: Oil on Canvas</p>
-            <p>
-                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
-                
-            </p>
-        </div>
-        </div>
-        <div class="painting-details">
-            <img src="https://source.unsplash.com/featured/?Impressionist%20Art" alt="Painting 1">
-            <div class="info">
-            <h2>After that moment</h2>
-            <p>Artist: John Doe</p>
-            <p>Year: 2023</p>
-            <p>Medium: Oil on Canvas</p>
-            <p>
-                Description: Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet 
-                
-            </p>
-        </div>
-        </div>
-        
-       
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="https://source.unsplash.com/featured/?logo" alt="Artify Logo">
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2023 Artify. All Rights Reserved.</p>
-                <p>Contact: info@artify.com</p>
-                <p>Follow Us:</p>
-                <div class="social-icons">
-                    <a href="#"><img src="https://source.unsplash.com/featured/?facebook" alt="Facebook"></a>
-                    <a href="#"><img src="https://source.unsplash.com/featured/?twitter" alt="Twitter"></a>
-                    <a href="#"><img src="https://source.unsplash.com/featured/?instagram" alt="Instagram"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    
-        <script>
-            // Event listeners for navigation links
-            const homeLink = document.getElementById('home-link');
-            const galleryLink = document.getElementById('gallery-link');
-            const aboutLink = document.getElementById('about-link');
-            const contactLink = document.getElementById('contact-link');
-    
-            homeLink.addEventListener('click', () => {
-                window.location.href = 'Home.html';
-            });
-    
-            galleryLink.addEventListener('click', () => {
-                window.location.href = 'index.html';
-            });
-    
-            aboutLink.addEventListener('click', () => {
-                window.location.href = 'about.html';
-            });
-    
-            contactLink.addEventListener('click', () => {
-                window.location.href = 'contact.html';
-            });
-        </script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="title"> WELCOME TO ARTIFY</div>
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="Home.html" class="nav-link" id="homeLink">Home</a></li>
+        <li class="nav-item"><a href="./favorites.html" class="nav-link" id="categoryLink">Favourites</a></li>
+      </ul>
+    </div>
+    <div id="main" class="category-container">
+      <a href="./classic.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Classic%20Art');"></div>
+        <hr>
+        <p class="category-name">Classic Art</p>
+      </div>
+    </a>
+    <a href="./modern.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Modern%20Art');"></div>
+        <hr>
+        <p class="category-name">Modern Art</p>
+      </div>
+    </a>
+    <a href="./abstract.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Abstract%20Art');"></div>
+        <hr>
+        <p class="category-name">Abstract Art</p>
+      </div>
+    </a>
+    <a href="./abstract.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Impressionist%20Art');"></div>
+        <hr>
+        <p class="category-name">Impressionist Art</p>
+      </div>
+    </a>
+    <a href="./abstract.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Surrealist%20Art');"></div>
+        <hr>
+        <p class="category-name">Surrealist Art</p>
+      </div>
+    </a>
+    <a href="./Realist.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Realist%20Art');"></div>
+        <hr>
+        <p class="category-name">Realist Art</p>
+      </div>
+    </a>
+      <a href="./Cubist.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Cubist%20Art');"></div>
+        <hr>
+        <p class="category-name">Cubist Art</p>
+      </div>
+    </a>
+      <a href="./Pop.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Pop%20Art');"></div>
+        <hr>
+        <p class="category-name">Pop Art</p>
+      </div>
+    </a>
+      <a href="./Baroque.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Baroque%20Art');"></div>
+        <hr>
+        <p class="category-name">Baroque Art</p>
+      </div>
+    </a>
+      <a href="./Renaissance.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Renaissance%20Art');"></div>
+        <hr>
+        <p class="category-name"> Renaissance  Art</p>
+      </div>
+    </a>
+      <a href="./Minimalist.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Minimalist%20Art');"></div>
+        <hr>
+        <p class="category-name">Minimalist Art</p>
+      </div>
+    </a>
+      <a href="./Expressionist.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Expressionist%20Art');"></div>
+        <hr>
+        <p class="category-name">Expressionist Art</p>
+      </div>
+    </a>
+      <a href="./Romantic.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Romantic%20Art');"></div>
+        <hr>
+        <p class="category-name">Romantic Art</p>
+      </div>
+    </a>
+      <a href="./Contemporary.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Contemporary%20Art');"></div>
+        <hr>
+        <p class="category-name">Contemporary</p>
+      </div>
+    </a>
+      <a href="./Neo-Futurism-Art.html">
+      <div class="category-box" id="classicArt">
+        <div class="category-image" style="background-image: url('https://source.unsplash.com/featured/?Neo-Futurism%20Art');"></div>
+        <hr>
+        <p class="category-name">Neo-Futurism Art</p>
+      </div>
+    </a>
+    </div>
+      
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
